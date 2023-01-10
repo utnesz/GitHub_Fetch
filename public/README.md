@@ -5,5 +5,8 @@ how to handle incidental errors which may occur during fetching. In this case I 
 You have to just type the GitHub username then press Enter to get the main details of the user 
 info and the latest 7 repositores.
 
-Check it out here: 
+Check it out here: https://github-user-fetch.web.app 
+
+![image](https://user-images.githubusercontent.com/90829509/211629118-fd49006f-c858-4c10-ba9f-aa4bc713e861.png)
+
 
