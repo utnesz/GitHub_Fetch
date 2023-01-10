@@ -46,22 +46,6 @@ form.addEventListener('submit', (e) => {
 
 //Create User card into the DOM
 
-function addReposToCard(repos) {
-    const reposLmnt = document.getElementById('repos')
-
-    repos
-        .slice(0, 7)
-        .forEach(repo => {
-            const repoLmnt = document.createElement('a')
-            repoLmnt.classList.add('repo')
-            repoLmnt.href = repo.html_url
-            repoLmnt.target = '_blank'
-            repoLmnt.innerText = repo.name
-
-            reposLmnt.appendChild(repoLmnt)
-        })
-}
-
 //Data of users
 
 function createUserCard(user) {
@@ -92,9 +76,23 @@ function createUserCard(user) {
     main.innerHTML = cardHTML
 }
 
-//Data of Repos
+//Data of repos
 
+function addReposToCard(repos) {
+    const reposLmnt = document.getElementById('repos')
 
+    repos
+        .slice(0, 7)
+        .forEach(repo => {
+            const repoLmnt = document.createElement('a')
+            repoLmnt.classList.add('repo')
+            repoLmnt.href = repo.html_url
+            repoLmnt.target = '_blank'
+            repoLmnt.innerText = repo.name
+
+            reposLmnt.appendChild(repoLmnt)
+        })
+}
 
 
 //Create error message card into the DOM
